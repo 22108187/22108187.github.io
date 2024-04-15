@@ -1,0 +1,331 @@
+<html>
+
+<head>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<title>ICT Solutions: Profiles</title>
+	<link rel="icon" href="images\ICTSolutionsLogo1.png" type="image/x-icon"/>
+	<style>
+		* {box-sizing: border-box}
+		body {font-family: Verdana, sans-serif; margin:0}
+		.mySlides {display: none}
+		img {vertical-align: middle;}
+
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1150px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.3);
+		}
+
+		/* Caption text */
+		.text {
+		  color: #FFFFFF;
+		  font-size: 18px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #b45f06;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		  background-color: #e69138;
+		}
+
+		/* Fading animation */
+		.fade {
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="logo">
+		  <a href="index.htm">
+			  <img src="images\ICTSolutionsLogo1.png" style="height:20%">
+			  <img src="images\ICTSolutionsLogo2.png" style="height:20%">
+		  </a>
+	 </div>
+ 
+	<div class="topnav">
+		<b>
+		  <a href="application.htm">Apply Now</a>
+		  <a href="webdev.htm">Web Development Courses</a>
+		  <a href="jobspec.htm">Job Specification</a>
+			<div class="dropdown">
+			<div class="highlight">
+				<a class = "dropbtn" href="profiles.htm">Profiles</a>
+			</div>
+				<div class="dropdown-content">
+					<a href="profiles.htm#Profile3">Web Developer 3</a>
+					<a href="profiles.htm#Profile2">Web Developer 2</a>
+					<a href="profiles.htm#Profile1">Web Developer 1</a>
+				</div>
+			</div>
+		  <a href="index.htm">Home</a>
+		</b>
+	</div>
+
+<div class="content">
+
+	<div class = "maincontent">
+		
+		<div class= "whitebox">
+		
+			<div class="slideshow-container">
+
+			<div class="mySlides fade">
+					<a href="profiles.htm#Profile1">
+						<img src="images/WebDev1.jpg" style="width:100%">
+					</a>
+				<div class="text"><b><i>Gregory Gregory, 28</i></b></div>
+			</div>
+
+			<div class="mySlides fade">
+					<a href="profiles.htm#Profile2">
+						<img src="images/webdev2.jpg" style="width:100%">
+					</a>
+				<div class="text"><b><i>Suella Schofield, 22</i></b></div>
+			</div>
+
+			<div class="mySlides fade">
+					<a href="profiles.htm#Profile3">
+						<img src="images/webdev3.jpg" style="width:100%">
+					</a>
+				<div class="text"><b><i>Nicholas Hunt, 31</i></b></div>
+			</div>
+
+
+			</div>
+		
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+			
+		</div>
+			
+			<br><br>
+			
+		<div class= "orangborder">
+			<div class="row">
+				<center>
+					<div class="column1">
+						<div class="round">
+							<div class="container">
+								<img src="images/webdev1.jpg" alt="Image of ICT solutions web developer" class="image" >
+								<div class="overlay">
+									<div class="text">
+										<b>Gregory Gregory, <i>28</i></b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column1">
+							<div class="alignleft">
+								<h4>
+								<a id="Profile1">
+									<p class="fstyle4">Gregory Gregory, <i>28</i></p>
+								</a>
+								</h4>
+								<p>
+									Mr Gregory is an enthusiastic website designer, and as such he was able to flourish when joining ICT Solutions. Which gave him the capability to grow and push himself beyond his means.
+								</p>
+							</div>
+					</div>
+				</center>
+			</div>
+		</div>
+		
+		<div class= "whitebox">
+			  
+		</div>
+		
+		<div class= "orangborder">
+			<div class="row">
+				<center>
+					<div class="column1">
+						<div class="container">
+							<img src="images/webdev2.jpg" alt="Image of ICT Solutions web developer" class="image">
+								<div class="overlay">
+									<div class="text">
+										<b>Suella Schofield, <i>22</i></b>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="column1">
+							<div class="alignleft">
+									<h4>
+										<a id="Profile2">
+											<p class="fstyle4">Suella Schofield, <i>22</i></p>
+										</a>
+									</h4>
+									<p>
+										Ms Schofield joined ICT Solutions back in 2022, and since has broadened her horizons within the industry. Assisting with the development of large e-comerce projects and websites.
+									</p>
+							</div>
+					</div>
+				</center>
+			</div>
+		</div>
+		
+		<div class= "whitebox">
+			
+		</div>
+		
+		<div class= "noborder">
+			<div class="row">
+				<center>
+					<div class="column1">
+						<div class="container">
+							<img src="images/webdev3.jpg" alt="Image of ICT Solutions web developer" class="image">
+								<div class="overlay">
+									<div class="text">
+										<b>Nicholas Hunt, <i>31</i></b>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="column1">
+							<div class="alignleft">
+									<h4>
+										<a id="Profile3">
+											<p class="fstyle4">Nicholas Hunt, <i>31</i></p>
+										</a>
+									</h4>
+									<p>
+										Mr Hunt had an impressive portfolio of work having been in the industry for several years, however, at ICT Solutions Mr Hunt was able to build his skills and learn to work as a team. Developing websites for large scale corporate clients.
+									</p>
+							</div>
+					</div>
+				</center>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<div class="footer">
+	<div class="row">
+		<div class="column">
+			<center>
+				<p>
+					01244746353 | Support@ICTSolutions.co.uk
+				</p>
+				</p>
+			</center>
+		</div>
+		<div class="column">
+			<center>
+				<p class="foot">Copyright © 2024 ICT Solutions Ltd. All rights reserved.</p>
+			</center>
+		</div>
+		<div class="column">
+			<center>
+				<a href="https://www.instagram.com">
+					<img src="images/Insta.png" style="height: 5%" alt="Instagram Logo">
+				</a>
+				<a href="https://www.facebook.com">
+					<img src="images/fb.png" style="height: 5%" alt="Facebook Logo">
+				</a>
+				<a href="https://www.twitter.com">
+					<img src="images/X.png" style="height: 5%" alt="X Logo">
+				</a>
+			</center>
+		</div>
+	</div>
+</div>	
+
+</body>
+
+</html>
