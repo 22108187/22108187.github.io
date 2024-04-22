@@ -76,6 +76,9 @@ font-size: 19px;
 }
 
 /*Background objects styling*/
+hr.orang {
+border: 1px solid #e69138;
+}
 .whitebox{
 background-color: #FFFFFF;
 padding: 35;
@@ -167,7 +170,7 @@ width: 1000px;
 color: #94c47c;
 }
 .fstyle6{
-color: #b45f06;
+color: #94c47c;
 font-size: 20px;
 }
 .titlestyle1{
@@ -195,14 +198,19 @@ font-size: 22;
 
 h2{
 font-size: 32;
-color: #94c47c;
+color: #b45f06;
 }
 h3{
-color: #94c47c;
+color: #b45f06;
 font-size: 26px;
 }
+h4{
+color: #b45f06;
+font-size: 22;
+margin-left: 0;
+}
 h5{
-color: #94c47c;
+color: #b45f06;
 font-size: 24;
 }
 .alignright {
@@ -210,18 +218,32 @@ align: right;
 text-align: right;
 }
 .alignleft {
-align: left;
+align:left;
 text-align: left;
+}
+.alignleft1 {
+text-align: left;
+margin-left: 140;
 }
 
 /*Footer*/
 .footer {
-font-size: 17px;
+font-size: 18px;
 background-color: #b45f06;
 padding: 2px;
 color: #e69138;
+font-weight: 500;
 }
-
+.foot:hover{
+color: #FFFFFF;
+}
+.foot a {
+text-decoration: none;
+color: e69138;
+}
+.foot a:hover{
+color: #FFFFFF;
+}
 
 /*Welcome script formatting*/
 .welcome{
@@ -297,6 +319,9 @@ height: auto;
   text-align: center;
 }
 
+.tos:hover {
+  color: #94c47c;
+}
 
 /*Application formatting*/
 input[type=text] {
@@ -310,6 +335,7 @@ color: grey;
 }
 input[type=text]:focus {
 background-color: #d9ead3;
+border: 2px solid #e69138;
 color: #000000;
 font-weight: bold;
 }
@@ -324,6 +350,7 @@ color: grey;
 }
 input[type=date]:focus {
 background-color: #d9ead3;
+border: 2px solid #e69138;
 color: #000000;
 font-weight: bold;
 }
@@ -338,6 +365,7 @@ color: grey;
 }
 input[type=file]:focus {
 background-color: #d9ead3;
+border: 2px solid #e69138;
 color: #000000;
 font-weight: bold;
 }
@@ -352,6 +380,7 @@ color: grey;
 }
 select:focus {
 background-color: #d9ead3;
+border: 2px solid #e69138;
 color: #000000;
 font-weight: bold;
 }
